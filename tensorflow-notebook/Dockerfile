@@ -6,7 +6,7 @@ LABEL maintainer="Jupyter Project <jupyter@googlegroups.com>"
 
 # Install Tensorflow
 RUN conda install --quiet --yes \
-    'tensorflow=1.5*' \
+    'tensorflow=1.10*' \
     'keras=2.1*' && \
     conda clean -tipsy && \
     fix-permissions $CONDA_DIR && \
